@@ -1,6 +1,6 @@
-import Badge from "./common/Badge";
-import Button from "./common/Button";
-import Card from "./common/Card";
+import Badge from "../../common/Badge";
+import Button from "../../common/Button";
+import Card from "../../common/Card";
 
 export default function OrderCard({order}){
     const { id, build, date, status } = order;

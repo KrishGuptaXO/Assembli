@@ -1,14 +1,10 @@
-import Categories from "../../components/sections/Categories";
-import ContinueBuildCard from "../../components/sections/ContinueBuildCard";
-import FeaturedBuilds from "../../components/sections/featuredBuilds";
-import RecentOrders from "../../components/sections/RecentOrders";
+import FeaturedBuilds from "../../components/dashboard/FeaturedBuilds/FeaturedBuilds";
+import RecentOrders from "../../components/dashboard/RecentOrders/RecentOrders";
 
 export default function Dashboard(){
     return (
         <>
             <FeaturedBuilds />
-            <ContinueBuildCard />
-            <Categories />
             <RecentOrders />
         </>
     );

@@ -1,4 +1,4 @@
-export default function BuildPC() {
+export default function ImportBuild() {
     return (
         <h1 className="text-3xl text-white">
             Orders

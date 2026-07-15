@@ -1,6 +1,6 @@
-import orders from "../../data/orders";
-import Card from "../ui/common/Card";
-import OrderCard from "../ui/OrderCard";
+import orders from "../../../data/orders";
+import Card from "../../common/Card";
+import OrderCard from "../RecentOrders/OrderCard";
 export default function RecentOrders () {
     return (
         <Card>

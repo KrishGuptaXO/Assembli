@@ -1,5 +1,5 @@
-import Button from "./common/Button";
-import Card from "./common/Card";
+import Button from "../../common/Button";
+import Card from "../../common/Card";
 
 export default function BuildCard({build}) {
     const { name, cpu, gpu, ram, price, image } = build;

@@ -1,5 +1,5 @@
 import { Search, Bell, ShoppingCart, CircleUser } from 'lucide-react';
-import Button from '../ui/common/Button';
+import Button from '../common/Button';
 
 export default function Header(){
     return (

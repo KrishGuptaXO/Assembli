@@ -2,7 +2,7 @@
 - Splash screen startup with logo
 - Add hidden tags to PC cards for admin role. For user role they serve as filter tags to show them builds upon choosing.
 - Make the PC cards of Featured Builds an infinite carousel with admin-controlled builds and rest can be seen on /build page.
-- Search bar rn is just a button. It should rather be a subtle search box editable field (smth like brave middle search bar).
+- Search bar rn is just a button. It should rather be a subtle search box editable field (smth like brave browser middle search bar).
 - Add the nebula animation as bg for the entire website. (Sources: Namespace BPIT website, https://pixabay.com/videos/nebula-gas-galaxy-space-25047/)
 - The title of dashboard - Good morning should be time based, user based identity greeting...
 - "Welcome to Rigsmith" - this text can be animated... something more catchy 🤔

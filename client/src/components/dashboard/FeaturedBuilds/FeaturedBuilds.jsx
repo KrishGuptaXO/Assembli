@@ -1,7 +1,7 @@
-import Button from "../ui/common/Button"
-import featuredBuilds from "../../data/featuredBuilds";
-import BuildCard from "../ui/BuildCard";
-import Card from "../ui/common/Card";
+import Button from "../../common/Button"
+import featuredBuilds from "../../../data/featuredBuilds";
+import BuildCard from "./BuildCard";
+import Card from "../../common/Card";
 
 export default function FeaturedBuilds(){
     return(
