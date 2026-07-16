@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProSidebar from "./AppSidebar"
+import AppSidebar from "./AppSidebar/AppSidebar"
 import Header from "./Header"
 import { Outlet } from "react-router-dom";
 
@@ -7,12 +7,20 @@ export default function Layout() {
     const [collapsed, setCollapsed] = useState(false);
   return (
     <div className="flex min-h-screen">
-      <ProSidebar
-      collapsed={collapsed}
-      toggleSidebar={() => setCollapsed(!collapsed)}
+      <AppSidebar
+        collapsed={collapsed}
+        toggleSidebar={() => setCollapsed(!collapsed)}
       />
 
-      <div className="flex-1 flex flex-col">
+      <div className={`
+          flex-1
+          flex
+          flex-col
+          transition-all
+          duration-300
+          ${collapsed ? "ml-20" : "ml-64"}
+        `}
+      >
         <Header />
         <main className="flex-1 p-6">
           <Outlet />

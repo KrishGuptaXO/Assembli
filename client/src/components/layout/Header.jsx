@@ -3,7 +3,7 @@ import Button from '../common/Button';
 
 export default function Header(){
     return (
-        <header className='flex items-center justify-between px-6 py-4 border-b border-zinc-800 bg-[#0D1117]'>
+        <header className='flex items-center justify-between px-6 py-4 bg-[#0D1117]'>
             { /* Left */}
             <div>
                 <h1 className='text-2xl font-bold text-white'>

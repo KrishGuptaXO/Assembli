@@ -19,7 +19,7 @@ export default function ImportBuild() {
         }
 
         if (importMode === "url") {
-            if (!inputValue.includes("pcpartpicker.com/list/")){
+            if (!inputValue.includes("https://pcpartpicker.com/list/")){
                 setError("Please enter a valid URL.");
                 return;
             }
