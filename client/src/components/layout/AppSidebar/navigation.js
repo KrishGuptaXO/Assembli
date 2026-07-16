@@ -12,7 +12,7 @@ export const navigation = [
         icon: House,
     },
     {
-        label: "Import Builds",
+        label: "Inventory",
         path: "/build",
         icon: Cpu,
     },

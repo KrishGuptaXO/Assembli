@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AppSidebar from "./AppSidebar/AppSidebar"
-import Header from "./Header"
+import Header from "./Header/Header"
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {
