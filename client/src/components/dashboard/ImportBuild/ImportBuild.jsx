@@ -6,8 +6,33 @@ import { useState } from "react";
 export default function ImportBuild() {
     const [importMode, setImportMode] = useState("url");
     const [inputValue, setInputValue] = useState("");
+    const [error, setError] = useState("");
     const OpenLinkinNewTab = (url) => {
         window.open(url, '_blank', 'noopener, noreferrer');
+    };
+    const validateImport = () => {
+        setError("");
+
+        if(!inputValue.trim()){
+            setError("Please enter a PCPartPicker URL or build text.");
+            return;
+        }
+
+        if (importMode === "url") {
+            if (!inputValue.includes("pcpartpicker.com/list/")){
+                setError("Please enter a valid URL.");
+                return;
+            }
+        }
+
+        if (importMode === "text") {
+            if(inputValue.length < 30) {
+                setError("Please paste a complete component list.");
+                return;
+            }
+        }
+
+        console.log("Validation Passed!");
     };
     return (
         
@@ -51,7 +76,7 @@ export default function ImportBuild() {
 
                 </div>
 
-                <Button disabled={!inputValue.trim()} onClick={() => console.log("Checking availability...")}> Check Availability →</Button>
+                <Button disabled={!inputValue.trim()} onClick={validateImport}> Check Availability →</Button>
 
             </div>
 
@@ -63,7 +88,12 @@ export default function ImportBuild() {
                 value={inputValue}
                 onChange={(e)=>setInputValue(e.target.value)}
                 />
-            
+
+                {error && (
+                    <p className="mt-2 text-sm text-read-400">
+                        {error}
+                    </p>
+                )}
             </div>
             
             </Card>
